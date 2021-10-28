@@ -1,0 +1,27 @@
+{
+  "name": "@creative-order/root",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:types": "pnpify tsc -b ./tsconfig.packages.json --watch",
+    "start:app": "yarn workspace @creative-order/app start",
+    "start": "concurrently yarn:watch:types yarn:start:app"
+  },
+  "author": "Chris Mellard",
+  "license": "ISC",
+  "workspaces": [
+    "packages/*"
+  ],
+  "private": true,
+  "devDependencies": {
+    "@yarnpkg/pnpify": "^3.1.1-rc.1",
+    "concurrently": "^6.3.0"
+  },
+  "dependenciesMeta": {
+    "react-table@7.7.0": {
+      "unplugged": true
+    }
+  }
+}
