@@ -1,7 +1,7 @@
 import React from 'react';
-import { useSortBy } from 'react-table';
+// import { useSortBy } from 'react-table';
 
 export const Potato = () => {
-    const t = useSortBy();
+    // const t = useSortBy();
     return <div>hello</div>
 }

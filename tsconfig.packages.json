@@ -3,9 +3,6 @@
   "references": [
     {
       "path": "./packages/library"
-    },
-    {
-      "path": "./packages/mui-components"
     }
   ]
 }
